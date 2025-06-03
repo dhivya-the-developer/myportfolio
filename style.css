@@ -1,0 +1,161 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styling */
+.header {
+  background-color: #2c3e50;
+  padding: 15px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-title {
+  margin: 0 auto;
+  font-size: 28px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background-color: #2980b9;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #3498db;
+}
+
+/* Marquee */
+.marquee {
+  padding: 10px;
+  background-color: #16a085;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Main Container */
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: #ecf0f1;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #16a085;
+}
+
+.info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.info a {
+  color: black;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+  
+}
+
+/* About Section */
+.about {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ecf0f1;
+  border-radius: 10px;
+}
+
+/* Projects Page */
+.projects {
+  margin-top: 40px;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+.footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header-title {
+    margin: 10px auto;
+  }
+  .header-nav {
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    text-align: center;
+  }
+}
